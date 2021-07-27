@@ -1,9 +1,48 @@
+:root {
+    --font-blue-dark: #0065FC;
+    --font-blue-bright: #DEEBFF;
+    --font-grey: #F2F2F2; 
+  }
+
+
+
 .layout {
-    max-width: 1920px;
+    max-width: 1790px;
     width: 100%;
+    margin: auto;
 }
 
 .bloc-head_background {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo_page {
+    width: 7%;
+}
+
+nav ul {
+    padding-right: 10px;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 115px;
+}
+
+nav li {
+    font-family: Raleway;
+    font-weight: 500;  
+}
+
+nav .space_menu
+{
+    padding-right: 60px;
+}
+
+nav ul a {
+    color: var(--font-blue-dark);
+    text-decoration: none;
 }
