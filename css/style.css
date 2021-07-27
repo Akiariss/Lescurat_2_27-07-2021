@@ -1,0 +1,9 @@
+.layout {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.bloc-head_background {
+    display: flex;
+    align-items: center;
+}
