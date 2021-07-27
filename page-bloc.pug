@@ -1,0 +1,100 @@
+//- layout
+extends layouts/_default
+
+//- settings
+append vars 
+    - var pageTitle = 'page bloc reservia'
+    - var headLess = true
+
+append body 
+
+    .layout 
+
+        header 
+            .bloc-head_background
+                img(src="", alt="")
+                
+                nav 
+                    ul 
+                        li(href="#") Hébergements 
+                        li(href="#") Activités 
+
+                a(href="#") subscribe 
+
+        section 
+            .bloc-research 
+                h2 title h2 
+                p lorem ipsum pompi 
+
+                .reserch-line 
+                    input(type="button")
+                    input(type="text")
+                    input(type="button")
+
+                .search-filter 
+                    p Filtres 
+                    input(type="button" value="Économique")
+                    input(type="button" value="Familial")
+                    input(type="button" value="Romantique")
+                    input(type="button" value="Animaux autorisés")
+
+                .info-search 
+                    img(src="", alt="")
+                    p plus de 500 logements sont disponibles dans cette ville 
+
+        section
+            .bloc-resa 
+                .bloc-resa_loc 
+                    h3 Hébergements à Marseille 
+                    .bloc-card_location
+                        - for( let i= 0; i<6; i++)
+                            +cardInfoLoc('content/images/play.png', 'Titre', 'description', 'content/images/play.png')
+
+                .bloc-resa_famous
+                    h3 Les plus populaires 
+                        .bloc-card_famous
+                            - for( let i= 0; i<3; i++)
+                                +cardInfoPop('content/images/play.png', 'Titre', 'description', 'content/images/play.png')
+
+        section 
+            .bloc-activity 
+                h3 Activités à Marseille
+                    - for(let i= 0; i<3; i++)
+                        +cardInfoActivity('content/images/play.png', 'Titre')
+
+                    - for(let i= 0; i<3; i++)
+                        +cardInfoActivity('content/images/play.png', 'Titre')
+
+        footer 
+            .bloc-footer_background 
+                - for(let i= 0; i<3; i++)
+                    +blocFooter('Titre', 'textouille', 'textouille', 'textouille')
+
+
+
+//-MY mixins
+mixin cardInfoLoc(img, title, text, rating)
+    div
+        img(src= img)
+        p= title 
+        p= text 
+        img(src= rating)
+
+mixin cardInfoPop(img, title, text, rating)
+    div
+        img(src= img)
+        p= title 
+        p= text 
+        img(src= rating)
+
+mixin cardInfoActivity(img, title)
+    div 
+        img(src= img)
+        p= title
+
+mixin blocFooter(title, lien1, lien2, lien3)
+    div 
+        h4= title
+        p= lien1 
+        p= lien2 
+        p= lien3
