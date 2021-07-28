@@ -4,7 +4,9 @@
     --font-grey: #F2F2F2; 
   }
 
-
+body {
+    font-family: Raleway;
+}
 
 .layout {
     max-width: 1790px;
@@ -20,7 +22,7 @@
 }
 
 .logo_page {
-    width: 7%;
+    width: 130px;
 }
 
 nav ul {
@@ -28,21 +30,38 @@ nav ul {
     list-style-type: none;
     display: flex;
     position: absolute;
-    top: 5px;
-    right: 115px;
+    top: -24px;
+    right: 102px;
 }
 
 nav li {
-    font-family: Raleway;
     font-weight: 500;  
+    margin: 0 40px;
 }
 
-nav .space_menu
-{
-    padding-right: 60px;
-}
-
-nav ul a {
+li a {
     color: var(--font-blue-dark);
-    text-decoration: none;
+    text-decoration: none; 
+    line-height: 75px;
+}
+
+li a:before {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.5s, background-color 0.5s;
+}
+
+li a:hover:before{
+    width: 100%;
+    background-color: var(--font-blue-dark);
+}
+
+.sub-button {
+    font-weight: 700;  
+    color: var(--font-blue-dark);
+    text-decoration: none;   
 }
