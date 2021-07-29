@@ -1,3 +1,6 @@
+
+/* param-general*/
+
 :root {
     --font-blue-dark: #0065FC;
     --font-blue-bright: #DEEBFF;
@@ -8,11 +11,38 @@ body {
     font-family: Raleway;
 }
 
+body a {
+    text-decoration: none;
+}
+
 .layout {
     max-width: 1790px;
     width: 100%;
     margin: auto;
 }
+
+/* class-use */
+
+.btn-general {
+    background-color: var(--font-blue-dark);
+    border: var(--font-blue-dark);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 0 14px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.research-input_text {
+    border: white;
+    padding: 9px 0px 9px 14px;
+    color:#000;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*header*/
 
 .bloc-head_background {
     display: flex;
@@ -41,7 +71,6 @@ nav li {
 
 li a {
     color: var(--font-blue-dark);
-    text-decoration: none; 
     line-height: 75px;
 }
 
@@ -65,3 +94,99 @@ li a:hover:before{
     color: var(--font-blue-dark);
     text-decoration: none;   
 }
+
+/*bloc-research */
+
+.bloc-research h2 {
+    margin-bottom: 0;
+}
+
+.research-text_description {
+    margin: 10px 0 20px 0;
+}
+
+/* research-line */
+
+.reserch-line {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.reserch-line .fa-map-marker-alt {
+    background-color: var(--font-grey);
+    border: 1px solid var(--font-grey);
+    color: black;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: 16px;
+    padding: 10px 14px;
+}
+
+/* research-fliter */
+
+.search-filter {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-filter p {
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.search-filter .btn-general {
+    border-radius: 27px;
+    background-color: white;
+    border: rgb(206, 203, 203) 2px solid;
+    padding: 15px 18px 15px 55px;
+    color: black;
+}
+
+.eco_button:before, .family_button:before,
+.heart_button:before, .animal_button:before {
+    background-color: var(--font-blue-bright);
+    color: var(--font-blue-dark);
+    border-radius: 50%;
+    border: var(--font-blue-bright) 1px solid;
+    position: relative;
+}
+
+.eco_button:before {
+    content:"\f53a";
+    font-weight: 900;
+    font-family: "fontawesome";
+    display: inline-block;
+    padding: 15px;
+    left:48px;
+}
+
+.family_button:before {
+    content:"\f1ae";
+    font-weight: 900;
+    font-family: "fontawesome";
+    display: inline-block;
+    padding: 15px 18px;
+    left:48px;
+}
+
+.heart_button:before {
+    content:"\f004";
+    font-weight: 900;
+    font-family: "fontawesome";
+    display: inline-block;
+    padding: 15px;
+    left:48px;
+}
+
+.animal_button:before {
+    content:"\f6d3";
+    font-weight: 900;
+    font-family: "fontawesome";
+    display: inline-block;
+    padding: 15px;
+    left:48px;
+}
+
