@@ -134,7 +134,6 @@ li a:hover:before{
 .search-filter p {
     font-weight: 700;
     font-size: 18px;
-
 }
 
 .search-filter .btn-general {
@@ -162,7 +161,6 @@ li a:hover:before{
     color: var(--font-blue-dark);
     border-radius: 50%;
     border: var(--font-blue-bright) 1px solid;
-
 }
 
 .eco_icon:before {
@@ -172,7 +170,6 @@ li a:hover:before{
     display: inline-block;
     padding: 15px;
     margin-left: -3px;
-
 }
 
 .family_icon:before {
@@ -215,3 +212,53 @@ li a:hover:before{
     margin-right: 15px;
 }
 
+/* card-location-resa */
+
+.bloc-resa {
+    display: grid;
+    grid-template-columns: 54% 32%;
+    grid-gap: 5%;
+}
+
+.bloc-resa_loc {
+    background-color: var(--font-grey);
+    border-radius: 2%;
+    padding: 50px;
+}
+
+.bloc-card_location {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 45px;
+}
+
+.card-location {
+    background-color: white;
+    border-radius: 5%;
+    padding: 8px 8px 0 8px;
+    width: 100%;
+}
+
+.card-img {
+    height: 60%;
+    max-width: 400px;
+    width: 100%;
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+}
+
+.card-location .titre-card {
+    font-weight: 800;
+    margin: 0;
+}
+
+.card-location p {
+    margin: 0;
+}
+
+/* bloc-resa_famous */
+
+.bloc-resa_famous {
+    background-color: var(--font-grey);
+    border-radius: 2%;
+}
