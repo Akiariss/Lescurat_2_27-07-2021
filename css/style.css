@@ -45,6 +45,7 @@ body a {
     color:#000;
     font-weight: 700;
     font-size: 16px;
+    border: 1px solid var(--font-grey)
 }
 
 .bloc-resa_famous, .bloc-resa_loc {
@@ -107,6 +108,10 @@ li a:before {
 li a:hover:before{
     width: 100%;
     background-color: var(--font-blue-dark);
+}
+
+li a:hover {
+    color: #000;
 }
 
 .sub-button {
@@ -366,6 +371,140 @@ li a:hover:before{
     .search-filter {
         width: 65%;
     }
+    .card-location .card-img {
+        max-height: 100px;
+    }
 
 }
 
+@media screen and (max-width: 1232px) {
+    .search-filter {
+        width: 75%;
+    }
+
+    .bloc-resa {
+        grid-template-columns: 62% 33%;
+        grid-gap: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1072px) {
+    .search-filter {
+        width: 85%;
+    }
+
+    .bloc-resa {
+        grid-template-columns: 63% 34%;
+        grid-gap: 3%;
+    }
+
+    .bloc-flex_activity-principal {
+        grid-gap: 44px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .search-filter {
+        width: 95%;
+    }
+
+    .bloc-resa {
+        grid-template-columns: 57% 40%;
+        grid-gap: 3%;
+    }
+
+    .bloc-card_location {
+        grid-gap: 55px;
+        grid-template-columns: auto auto ;
+    }
+
+    .card-famous .card-img {
+        width: 36%;
+    }
+
+}
+
+@media screen and (max-width: 854px) {
+    h3 {
+        text-align: center;
+    }
+
+    nav ul {
+        position: relative;
+        top: 47px;
+        right: 10%;  
+        margin: auto;  
+    }
+
+    li a {
+        line-height: 35px;
+    }
+
+    li a:before {
+        display: none;
+    }
+
+    li a:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        transition: width 0.5s, background-color 0.5s;
+    }
+
+    li a:focus:after{
+        width: 100%;
+        background-color: var(--font-blue-dark);
+    }
+
+    .bloc-research {
+        margin-top: 10%;
+    }
+
+    .search-filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bloc-resa {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card-famous, .card-location, .card-activity {
+        width: 77%;
+        margin: auto;
+    }
+    .bloc-flex_activity-principal {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: auto;
+    }
+
+    .bloc-flex_activity-right .card-activity {
+        width: auto;
+    }
+
+    .card-img-acivity {
+        width: 42vw;
+    }
+
+    .bloc-flex_activity-principal {
+        padding-bottom: 45px;    
+    }
+
+    .bloc-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloc-footer_contenu {
+        margin: auto;
+    }
+
+}
