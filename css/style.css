@@ -41,10 +41,10 @@ body a {
 
 .research-input_text {
     border: white;
-    padding: 9px 0px 9px 14px;
+    padding: 9px 30px 9px 20px;
     color:#000;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     border: 1px solid var(--font-grey)
 }
 
@@ -252,7 +252,7 @@ li a:hover {
 }
 
 .card-location .titre-card {
-    font-weight: 800;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -274,7 +274,7 @@ li a:hover {
 }
 
 .card-famous .titre-card {
-    font-weight: 800;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -342,7 +342,7 @@ li a:hover {
 }
 
 .card-activity .titre-card {
-    font-weight: 800;
+    font-weight: 600;
     margin: 15px 0px 15px 15px;
     
 }
