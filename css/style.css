@@ -323,7 +323,7 @@ li a:hover {
 
 .card-activity {
     padding: 0;
-    width: auto;
+    width: auto!important;
     height: auto;
 }
 
@@ -507,4 +507,73 @@ li a:hover {
         margin: auto;
     }
 
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .bloc-card_location {
+        grid-template-columns: auto;  
+    }  
+
+    .card-famous, .card-location {
+        margin: auto;
+        height: 96%;
+        width: 73%;
+        max-height: 242px;
+    }
+
+    .card-location .card-img {
+        max-width: 501px;
+        max-height: 344px;
+        height: 70%;
+    }
+
+    .bloc-flex_activity {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc-flex_activity-right, .bloc-flex_activity-right .card-activity {
+        margin: 20px auto;
+    }
+    
+    .bloc-flex_activity-right {
+        padding-left: 0;
+    }
+
+    .card-img-acivity {
+        width: 62.2vw;
+        max-height: 25.5vw;
+    }
+
+}
+
+@media screen and (max-width: 598px) {
+    .logo_page {
+        width: 20vw;
+    }
+
+    .sub-button {
+        margin-left: auto;
+    }
+    nav ul {
+        position: absolute;
+        right: 5%;
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .card-famous, .card-location {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .card-location .card-img {
+        height: 60%;
+        max-height: 99px;
+    }
 }
