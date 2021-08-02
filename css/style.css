@@ -43,7 +43,7 @@ body a {
     border: white;
     padding: 9px 0px 9px 14px;
     color:#000;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     border: 1px solid var(--font-grey)
 }
@@ -168,15 +168,18 @@ li a:hover {
     padding: 0px 15px 0px 0px;
 }
 
+.search-filter input:hover {
+    color:var(--font-blue-dark);
+}
+
 .search-filter input {
     border-radius: 0;
     background-color: white;
     border: none;
-    padding: 0;
     color: black;
     font-size: 17px;
     font-weight: 700;
-    padding: 13px 1px 13px 8px;
+    padding: 13px 1px 12px 8px;
     cursor: pointer;
 }
 
@@ -186,42 +189,30 @@ li a:hover {
     color: var(--font-blue-dark);
     border-radius: 50%;
     border: var(--font-blue-bright) 1px solid;
+    font-weight: 900;
+    font-family: "fontawesome";
+    display: inline-block;
+    margin-left: -3px;
 }
 
 .eco_icon:before {
     content:"\f53a";
-    font-weight: 900;
-    font-family: "fontawesome";
-    display: inline-block;
     padding: 15px;
-    margin-left: -3px;
 }
 
 .family_icon:before {
     content:"\f1ae";
-    font-weight: 900;
-    font-family: "fontawesome";
-    display: inline-block;
     padding: 15px 18px;
-    margin-left: -3px;
 }
 
 .heart_icon:before {
     content:"\f004";
-    font-weight: 900;
-    font-family: "fontawesome";
-    display: inline-block;
     padding: 15px;
-    margin-left: -3px;
 }
 
 .animal_icon:before {
     content:"\f6d3";
-    font-weight: 900;
-    font-family: "fontawesome";
-    display: inline-block;
     padding: 15px;
-    margin-left: -3px;
 }
 
 .info-search {
@@ -266,6 +257,11 @@ li a:hover {
 }
 
 .card-location p {
+    margin: 0;
+}
+
+.btn-watch_more {
+    padding-top: 7%;
     margin: 0;
 }
 
@@ -347,7 +343,7 @@ li a:hover {
 
 .card-activity .titre-card {
     font-weight: 800;
-    margin: 5px 0px 5px 10px;
+    margin: 15px 0px 15px 15px;
     
 }
 
@@ -408,11 +404,17 @@ li a:hover {
         grid-gap: 44px;
     }
 
+    .bloc-flex_activity-right {
+        padding-left: 9%;
+    }
 }
 
 @media screen and (max-width: 950px) {
     .search-filter {
         width: 95%;
+    }
+    .bloc-resa_famous, .bloc-resa_loc {
+        padding: 25px;
     }
 
     .bloc-resa {
@@ -421,14 +423,21 @@ li a:hover {
     }
 
     .bloc-card_location {
-        grid-gap: 55px;
+        grid-gap: 50px;
         grid-template-columns: auto auto ;
+    }
+
+    .bloc-card_famous {
+        grid-gap: 40px;
     }
 
     .card-famous .card-img {
         width: 36%;
     }
 
+    .card-img-acivity {
+        width: 22vw;
+    }
 }
 
 @media screen and (max-width: 854px) {
@@ -475,6 +484,10 @@ li a:hover {
         align-items: flex-start;
     }
 
+    .search-filter .btn-general{
+        margin-bottom: 2%;
+    }
+
     .bloc-resa {
         display: flex;
         flex-direction: column-reverse;
@@ -497,10 +510,6 @@ li a:hover {
 
     .card-img-acivity {
         width: 42vw;
-    }
-
-    .bloc-flex_activity-principal {
-        padding-bottom: 45px;    
     }
 
     .bloc-footer {
@@ -577,12 +586,42 @@ li a:hover {
 
 @media screen and (max-width: 375px) {
 
+    .logo_page {
+        width: 26vw;
+    }
+
+    .info-search .fa-info {
+        margin-top: -17px;
+        padding: 3px 9px;
+    }
+
+    .search-icon:before {
+        content: '\1f50d';
+        display: block;
+        font-weight: 700;
+        color: white;
+        background-color: var(--font-blue-dark);
+        padding: 12px 16px;
+        border-radius: 16px;
+        margin-left: -22px
+
+    }
+
+    .research-line .recherche{
+        display: none;
+    }
+    .research-line .fa-map-marker-alt {
+        padding: 16px;
+    }
+    .research-input_text {
+        font-size: 19px;
+    }
     .bloc-research {
         margin-top: 16%;
     }
 
     .bloc-resa_famous, .bloc-resa_loc {
-        padding: 35px;
+        padding: 35px 20px 35px 11px;
     }
 
     .bloc-resa_loc {
@@ -595,8 +634,8 @@ li a:hover {
     }
 
     .card-location .card-img {
-        height: 60%;
-        max-height: 99px;
+        height: 73%;
+        max-height: 134px;
     }
     
     .bloc-flex_activity-principal {
@@ -604,22 +643,13 @@ li a:hover {
     }
 
     .card-img-acivity {
-        width: 79.2vw;
-        max-height: 34.5vw;
+        width: 89.2vw;
+        max-height: 37.5vw;
     }
 
     .bloc-footer {
         text-align: initial;
     }
 
-    .test:before {
-        content: '\1f50d';
-        display: block;
-        font-weight: 900;
 
-    }
-
-    .research-line .recherche{
-        display: none;
-    }
 }
