@@ -250,6 +250,7 @@ li a:hover {
     width: 100%;
     border-top-left-radius: 8%;
     border-top-right-radius: 8%;
+    object-fit: cover;
 }
 
 .card-location .titre-card {
@@ -288,6 +289,7 @@ li a:hover {
     width: 30%;
     float: left;
     padding-right: 20px;
+    object-fit: cover;
 }
 
 .bloc-description_famous {
@@ -328,24 +330,25 @@ li a:hover {
     width: 20vw;
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
+    object-fit: cover;
 }
 
 .card-img-activity_tall {
     height: auto;
 }
 
-.bloc-activity_end-b {
+.bloc-activity_end-b, .bloc-activity_end-a {
     margin-top: auto;
-}
-
-.bloc-activity_end-a {
-    margin-top: auto;   
 }
 
 .card-activity .titre-card {
     font-weight: 600;
     margin: 15px 0px 15px 15px;
     
+}
+
+.img-mobile {
+    display: none;
 }
 
 /*footer */
@@ -420,12 +423,11 @@ li a:hover {
 
     .bloc-resa {
         grid-template-columns: 57% 40%;
-        grid-gap: 3%;
     }
 
     .bloc-card_location {
         grid-gap: 50px;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto auto;
     }
 
     .bloc-card_famous {
@@ -621,8 +623,13 @@ li a:hover {
         padding: 16px;
     }
     .research-input_text {
-        font-size: 19px;
+        font-size: 18px;
     }
+
+    .search-icon:before {
+        padding: 14px 16px;
+    }
+
     .bloc-research {
         margin-top: 16%;
     }
@@ -657,6 +664,5 @@ li a:hover {
     .bloc-footer {
         text-align: initial;
     }
-
 
 }
