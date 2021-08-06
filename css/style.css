@@ -7,16 +7,17 @@
     --font-grey: #F2F2F2; 
   }
 
-body {
+body, body a {
     font-family: Raleway;
-}
-
-body a {
     text-decoration: none;
     color: #000;
 }
 
-.layout {
+p {
+    margin: 0;
+}
+
+main {
     width: 100%;
     margin: auto;
 }
@@ -66,7 +67,7 @@ body a {
 
 /*header*/
 
-.bloc-head_background {
+.bloc-head_nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -194,11 +195,11 @@ li a:hover {
     font-family: "fontawesome";
     display: inline-block;
     margin-left: -3px;
+    padding: 15px;
 }
 
 .eco_icon:before {
     content:"\f53a";
-    padding: 15px;
 }
 
 .family_icon:before {
@@ -208,12 +209,10 @@ li a:hover {
 
 .heart_icon:before {
     content:"\f004";
-    padding: 15px;
 }
 
 .animal_icon:before {
     content:"\f6d3";
-    padding: 15px;
 }
 
 .info-search {
@@ -233,21 +232,25 @@ li a:hover {
 
 .bloc-resa {
     display: grid;
-    grid-template-columns: 58% 32%;
-    grid-gap: 10%;
+    grid-template-columns: 60% 32%;
+    grid-gap: 8%;
 }
 
 .bloc-card_location {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 45px;
+    grid-gap: 88px;
+}
+
+.card-location, .bloc-card_location a {
+    max-width: 255px;
 }
 
 .card-img {
     max-height: 130px;
     height: 100%;
-    max-width: 300px;
     width: 100%;
+    max-width: 255px;
     border-top-left-radius: 8%;
     border-top-right-radius: 8%;
     object-fit: cover;
@@ -258,13 +261,8 @@ li a:hover {
     margin: 0;
 }
 
-.card-location p {
-    margin: 0;
-}
-
 .btn-watch_more {
-    padding-top: 7%;
-    margin: 0;
+    padding-top: 5%;
 }
 
 /* bloc-resa_famous */
@@ -347,15 +345,10 @@ li a:hover {
     
 }
 
-.img-mobile {
-    display: none;
-}
-
 /*footer */
 
 .bloc-footer_background {
     background-color: var(--font-grey);
-    width: 100%;
 }
 
 .bloc-footer {
@@ -426,8 +419,8 @@ li a:hover {
     }
 
     .bloc-card_location {
-        grid-gap: 50px;
         grid-template-columns: auto auto;
+        grid-gap: 25px;
     }
 
     .bloc-card_famous {
@@ -496,8 +489,12 @@ li a:hover {
         flex-direction: column-reverse;
     }
 
+    .card-location, .bloc-card_location a {
+        max-width: 100%;
+    }
+
     .card-famous, .card-location, .card-activity {
-        width: 77%;
+        width: 71%;
         margin: auto;
     }
     .bloc-flex_activity-principal {
@@ -534,9 +531,7 @@ li a:hover {
     }  
 
     .card-famous, .card-location {
-        margin: auto;
-        height: 96%;
-        width: 73%;
+        width: 56%;
         max-height: 242px;
     }
 
@@ -553,10 +548,7 @@ li a:hover {
 
     .bloc-flex_activity-right, .bloc-flex_activity-right .card-activity {
         margin: 20px auto;
-    }
-    
-    .bloc-flex_activity-right {
-        padding-left: 0;
+        padding: 0;
     }
 
     .card-img-acivity {
