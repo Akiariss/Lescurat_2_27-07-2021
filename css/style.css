@@ -17,6 +17,10 @@ p {
     margin: 0;
 }
 
+span {
+    font-weight: bold;
+}
+
 main {
     width: 100%;
     margin: auto;
@@ -294,6 +298,18 @@ li a:hover {
     padding: 10px;
 }
 
+.bloc-resa_famous h3 {
+    position: relative;
+}
+
+.bloc-resa_famous h3:after {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-weight: 900;
+    font-family: fontawesome;
+    content: "\f201";
+}
 
 /* activity-bloc */
 
