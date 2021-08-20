@@ -394,23 +394,6 @@ li a:hover {
     padding: 30px;
 }
 
-/* @media screen and (max-width: 2758px) {
-    .card-img-acivity {
-        width: 12vw;
-        border-top-right-radius: 5%;
-        border-top-left-radius: 5%;
-        object-fit: cover;
-    }
-    
-    .card-img-activity_tall {
-        height: 89%;
-    }
-    
-    .card-img-activity_tall.card-img-acivity {
-        width: 100%;
-    }
-} */
-
 @media screen and (max-width: 1450px) {
     .search-filter {
         width: 65%;
@@ -603,10 +586,9 @@ li a:hover {
     }
 
     .card-img-acivity {
-        width: 62.2vw;
+        width: 62.2vw!important;
         max-height: 25.5vw;
     }
-
 }
 
 @media screen and (max-width: 598px) {
