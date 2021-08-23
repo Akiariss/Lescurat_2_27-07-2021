@@ -1,7 +1,5 @@
 
 /* param-general*/
-@import url("typo.css");
-
 body, body a {
     font-family: Raleway;
     text-decoration: none;
@@ -30,8 +28,8 @@ main {
 /* class-use */
 
 .btn-general {
-    background-color: var(--font-blue-dark);
-    border: var(--font-blue-dark);
+    background-color:  #0065FC;
+    border:  #0065FC;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     padding: 0 14px;
@@ -46,11 +44,11 @@ main {
     color:#000;
     font-weight: 500;
     font-size: 20px;
-    border: 1px solid var(--font-grey)
+    border: 1px solid #F2F2F2
 }
 
 .bloc-resa_famous, .bloc-resa_loc {
-    background-color: var(--font-grey);
+    background-color: #F2F2F2;
     border-radius: 2%;
     padding: 39px;
 }
@@ -65,12 +63,12 @@ main {
 }
 
 .checked {
-    color: var(--font-blue-dark);
+    color:  #0065FC;
     padding-top: 10px;
 }
 
 .empty {
-    color:  var(--font-grey);
+    color:  #F2F2F2;
 }
 
 /*header*/
@@ -101,7 +99,7 @@ nav li {
 }
 
 li a {
-    color: var(--font-blue-dark);
+    color:  #0065FC;
     line-height: 75px;
 }
 
@@ -117,7 +115,7 @@ li a:before {
 
 li a:hover:before{
     width: 100%;
-    background-color: var(--font-blue-dark);
+    background-color:  #0065FC;
 }
 
 li a:hover {
@@ -126,7 +124,7 @@ li a:hover {
 
 .sub-button {
     font-weight: 700;  
-    color: var(--font-blue-dark);
+    color:  #0065FC;
     text-decoration: none;   
 }
 
@@ -148,8 +146,8 @@ li a:hover {
 }
 
 .research-line .fa-map-marker-alt {
-    background-color: var(--font-grey);
-    border: 1px solid var(--font-grey);
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
     color: black;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -179,7 +177,7 @@ li a:hover {
 }
 
 .search-filter input:hover {
-    color:var(--font-blue-dark);
+    color: #0065FC;
 }
 
 .search-filter input {
@@ -195,10 +193,10 @@ li a:hover {
 
 .eco_icon:before, .family_icon:before,
 .heart_icon:before, .animal_icon:before {
-    background-color: var(--font-blue-bright);
-    color: var(--font-blue-dark);
+    background-color: #DEEBFF;
+    color:  #0065FC;
     border-radius: 50%;
-    border: var(--font-blue-bright) 1px solid;
+    border: #DEEBFF 1px solid;
     font-weight: 900;
     font-family: "fontawesome";
     display: inline-block;
@@ -231,8 +229,8 @@ li a:hover {
 }
 
 .info-search .fa-info {
-    color: var(--font-blue-dark);
-    border:var(--font-grey) solid 2px;
+    color:  #0065FC;
+    border:#F2F2F2 solid 2px;
     border-radius: 50%;
     padding: 5px 11px;
     margin-right: 15px;
@@ -313,7 +311,7 @@ li a:hover {
     position: absolute;
     right: 0;
     font-weight: 900;
-    font-family: fontawesome;
+    font-family: 'fontawesome';
     content: "\f201";
 }
 
@@ -379,7 +377,7 @@ li a:hover {
 /*footer */
 
 .bloc-footer_background {
-    background-color: var(--font-grey);
+    background-color: #F2F2F2;
 }
 
 .bloc-footer {
@@ -499,7 +497,7 @@ li a:hover {
 
     li a:focus:after{
         width: 100%;
-        background-color: var(--font-blue-dark);
+        background-color:  #0065FC;
     }
 
     .bloc-research {
@@ -608,7 +606,7 @@ li a:hover {
         display: block;
         font-weight: 700;
         color: white;
-        background-color: var(--font-blue-dark);
+        background-color: #0065FC;
         padding: 14.5px 16px;
         border-radius: 16px;
         margin-left: -22px
