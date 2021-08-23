@@ -215,7 +215,11 @@ li a:hover {
 
 .heart_icon:before {
     content:"\f004";
-    font-weight: bold!important;
+    background-image: url('../images/logo/like.svg');
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: bold;
     
 }
 
