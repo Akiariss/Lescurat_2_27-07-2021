@@ -349,7 +349,7 @@ li a:hover {
 }
 
 .card-img-acivity {
-    width: 19vw;
+    width: 100%;
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
     object-fit: cover;
@@ -560,7 +560,7 @@ li a:hover {
     }  
 
     .card-famous, .card-location {
-        width: 56%;
+        width: 70%;
         max-height: 242px;
     }
 
@@ -614,6 +614,16 @@ li a:hover {
 
     .research-line .recherche{
         display: none;
+    }
+
+    .card-famous, .card-location {
+        width: 86%;
+        max-height: 242px;
+    }
+
+    .card-img-acivity {
+        width: 72.2vw!important;
+        max-height: 33.5vw;
     }
 
 }
@@ -675,6 +685,10 @@ li a:hover {
     
     .bloc-flex_activity-principal {
         grid-gap: 0px;
+    }
+
+    .card-img-acivity {
+        width: 85.2vw!important;
     }
 
     .card-img-acivity {
